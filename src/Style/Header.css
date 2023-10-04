@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=DM+Sans:opsz@9..40&display=swap");
+.HeaderPrincipal {
+  background-color: #100f21;
+  border-bottom: 4px solid #313246;
+}
+.tittleSeccion {
+  padding: 0;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+/* .CajainpuntHeaderSearch {
+  border: 1px solid firebrick;
+  height: 2rem;
+  width: 15rem;
+} */
+.inpuntHeaderSearch {
+  background-color: #32334f;
+  width: 15rem;
+  height: 2rem;
+  border: none;
+  border-radius: 15px;
+  padding-left: 1.2rem;
+  padding-bottom: 0.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.cajaUsuarioRegistrado {
+  /* border: 1px solid white; */
+  width: 12rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cajaFotoUsuario {
+  width: 3rem;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+}
+.cajaNombreUsuario {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nombreUsuario {
+  color: white;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+.tipoDeCargo {
+  color: gray;
+  transition: .2s;
+}
+.tipoDeCargo:hover {
+  color: rgb(218, 216, 216);
+}
+.btn-close {
+  background-image: none;
+  background-image: url(../Image/HEADER/buttonClose.png);
+}
+.navbar-toggler {
+  border: 1px solid #313246;
+}
+.navbar-toggler-icon {
+  background-image: none;
+  background-image: url(../Image/HEADER/botonHamburguesa.png);
+}
+#offcanvasNavbar-expand-false {
+  background-color: #1b1c30;
+  color: white;
+}
+.offcanvas-header {
+  /* border: 1px solid white; */
+  height: 10%;
+}
+.bodyNavBar {
+  /* border: 1px solid saddlebrown; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .cajaBotonesDeSecciones {
+  border: 1px solid red;
+} */
+.linkDeSeccion {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.2rem;
+  color: #606285;
+  text-decoration: none;
+  padding: 20px;
+  transition: 0.2s;
+  /* border: 1px solid springgreen; */
+}
+.linkDeSeccion:hover {
+  color: white;
+}
+.tittleSeccionNavBar {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+.cajaBotonCerrarSesion {
+  /* border: 1px solid salmon; */
+  margin-bottom: 1rem;
+}
