@@ -2,8 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=DM+Sans:opsz@9..40&display=swap");
 .HeaderPrincipal {
   height: 10.5vh;
-  background-color: #100f21;
-  border-bottom: 4px solid #313246;
+  /* background-color: #100f21; */
+  background-color: #141414;
+  /* border-bottom: 4px solid #313246; */
+  border-bottom: 4px solid #1c1c20fb;
 }
 .tittleSeccion {
   padding: 0;
@@ -43,8 +45,8 @@
   font-family: "DM Sans", sans-serif;
 }
 .tipoDeCargo {
-  color: gray;
-  transition: .2s;
+  color: #9dbb2f;
+  transition: 0.2s;
 }
 .tipoDeCargo:hover {
   color: rgb(218, 216, 216);
@@ -61,8 +63,8 @@
   background-image: url(../Image/HEADER/botonHamburguesa.png);
 }
 #offcanvasNavbar-expand-false {
-  background-color: #1b1c30;
-  color: white;
+  /* background-color: #1b1c30; */
+  background-color: #1c1c20;
   width: 20rem;
 }
 .offcanvas-header {
@@ -87,14 +89,14 @@
   justify-content: center;
   font-family: "Archivo Narrow", sans-serif;
   font-size: 1.2rem;
-  color: #606285;
+  color: white;
   text-decoration: none;
   padding: 20px;
   transition: 0.2s;
   /* border: 1px solid springgreen; */
 }
 .linkDeSeccion:hover {
-  color: white;
+  color: #9dbb2f;
 }
 .tittleSeccionNavBar {
   margin: 0;

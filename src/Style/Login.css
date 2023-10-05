@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=DM+Sans:opsz@9..40&display=swap");
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.mainLogin {
+  background: #141414;
+  height: 100vh;
+}
+.cajaLogoLogin {
+  /* border: 1px solid seagreen; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 6rem !important; */
+}
+.cardLogoLogin {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  /* border: 1px solid aqua; */
+  border: 20px;
+}
+.cardLogoLogin:hover {
+  width: 600px;
+  transition-delay: 0.4s;
+}
+.cardLogoLogin .circule {
+  --clr: #9dbb2f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardLogoLogin .circule::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgb(22, 20, 20);
+  border: 8px solid var(--clr);
+  filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+  transition: 0.4s, background 0.4s;
+  transition-delay: 0.4s, 0.4s;
+}
+.cardLogoLogin:hover .circule::before {
+  transition-delay: 0.3s;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--clr);
+}
+.cardLogoLogin .circule .imagenLogo {
+  position: relative;
+  width: 90%;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.cardLogoLogin:hover .circule .imagenLogo {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+.cardLogoLogin .imagenCaja {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0) rotate(315deg);
+  height: 300px;
+  transition: 0.2s ease-in-out;
+}
+.cardLogoLogin:hover .imagenCaja {
+  transition-delay: 0.20s;
+  top: 20%;
+  left: 74%;
+  height: 350px;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+.cardLogoLogin .cajaTextoLogoLogin {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  left: 20%;
+  padding: 20px 15px 10px 30px !important;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+  /* border: 1px solid black; */
+}
+.cardLogoLogin:hover .cajaTextoLogoLogin {
+  transition-delay: 0.55s;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+.cardLogoLogin .cajaTextoLogoLogin .h2StockFlowLogo {
+  color: rgb(22, 20, 20);
+  font-size: 2.5rem;
+  line-height: 1em;
+  margin-bottom: 1rem !important;
+  font-family: "Archivo Narrow", sans-serif;
+}
+.cardLogoLogin .cajaTextoLogoLogin .preguntaEstasBuscando {
+  font-size: 1.2rem !important;
+  color: rgb(22, 20, 20);
+  font-family: "DM Sans", sans-serif;
+}
+.cardLogoLogin .cajaTextoLogoLogin .noBusquesMas {
+  font-size: 1.2rem !important;
+  color: rgb(114, 0, 167);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-family: "DM Sans", sans-serif;
+}
+.cajaFormLogin {
+  /* border: 1px solid rgb(204, 20, 127); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cajaFormInput {
+  background: #1c1c20fb;
+  height: 30rem;
+  width: 26rem;
+  border-radius: 5px;
+}
+.cajaFormInput form {
+  /* border: 1px solid #ffffff; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px !important;
+}
+.cajaFormInput form .loginStockFlowH1 {
+  font-family: "Archivo Narrow", sans-serif;
+  color: white;
+}
+.cajaFormInput .inputBoxLogin {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background: red; */
+}
+
+.inputBoxLogin .inputFromLogin {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  padding: 20px 45px 20px 20px !important;
+}
+.inputBoxLogin .inputFromLogin::placeholder {
+  color: white;
+}
+.inputBoxLogin svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 25px;
+  color: #9dbb2f;
+}
+.forgetLogin .preguntaOlvidarContraseña {
+  color: #9dbb2f;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: "DM Sans", sans-serif;
+}
+.forgetLogin .preguntaOlvidarContraseña:hover {
+  text-decoration: underline;
+  color: white;
+}
+.botonIngresarSesionLogin {
+  width: 100%;
+  height: 45px;
+  background-color: #9dbb2f;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #141414;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  font-family: "Archivo Narrow", sans-serif;
+}
+.botonIngresarSesionLogin:hover {
+  color: white;
+  background-color: #505e1e;
+}
+.boxPreguntaRegistro {
+  /* border: 1px solid seagreen; */
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+}
+.boxPreguntaRegistro .preguntaNoTenesCuenta {
+  color: white;
+  transition: 0.2s;
+  font-family: "DM Sans", sans-serif;
+}
+
+.boxPreguntaRegistro .linkRegistro {
+  color: #9dbb2f;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: "DM Sans", sans-serif;
+}
+.boxPreguntaRegistro .linkRegistro:hover {
+    text-decoration: underline;
+}

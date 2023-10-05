@@ -27,8 +27,6 @@ const Products = () => {
             <CardProduct />
             <CardProduct />
             <CardProduct />
-         
-
           </section>
         </Col>
       </Row>
