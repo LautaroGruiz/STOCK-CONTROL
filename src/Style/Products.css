@@ -41,17 +41,20 @@
 
 #inputSearchProduct:valid ~ .spanInputSearch,
 #inputSearchProduct:focus ~ .spanInputSearch {
-  color: rgb(63, 209, 209);
+  color: #9dbb2f;
   transform: translateX(15px) translateY(-7px);
   padding: 0 20px;
-  font-size: 11.8px;
+  font-size: 12px;
   background: #100f21;
   border-left: 1px solid #1b1c30;
   border-right: 1px solid #1b1c30;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .cajaMostrarProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 89%;
   height: 32rem;
   border-radius: 10px;
@@ -59,4 +62,16 @@
   background-color: #1b1c30;
   margin: 0 auto;
   margin-top: 0.5rem;
+  padding: 1rem;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9dbb2f;
+  border-radius: 3px;
+
 }

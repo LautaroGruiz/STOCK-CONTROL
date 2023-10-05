@@ -63,6 +63,7 @@
 #offcanvasNavbar-expand-false {
   background-color: #1b1c30;
   color: white;
+  width: 20rem;
 }
 .offcanvas-header {
   /* border: 1px solid white; */

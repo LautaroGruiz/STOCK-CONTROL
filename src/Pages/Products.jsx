@@ -1,22 +1,9 @@
 import "../Style/Products.css";
 import { Container, Row, Col } from "react-bootstrap";
+import CardProduct from "../Components/CardProduct";
 
 const Products = () => {
   return (
-    // <>
-    //   <main className="mainProducts">
-    //     <div className="cajaDeFiltro">
-    //       <input
-    //         type="text"
-    //         name=""
-    //         id="inputSearchProduct"
-    //         required="required"
-    //       />
-    //       <span className="spanInputSearch">Buscar</span>
-    //     </div>
-    //     <section className="cajaMostrarProductos"></section>
-    //   </main>
-    // </>
     <Container fluid className="mainProducts">
       <Row>
         <Col xs={12} lg={12}>
@@ -33,7 +20,16 @@ const Products = () => {
       </Row>
       <Row>
         <Col lg={12}>
-          <section className="cajaMostrarProductos"></section>
+          <section className="cajaMostrarProductos">
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+            <CardProduct />
+         
+
+          </section>
         </Col>
       </Row>
     </Container>
@@ -41,17 +37,3 @@ const Products = () => {
 };
 
 export default Products;
-{
-  /* <main className="mainProducts">
-            <div className="cajaDeFiltro">
-              <input
-                type="text"
-                name=""
-                id="inputSearchProduct"
-                required="required"
-              />
-              <span className="spanInputSearch">Buscar</span>
-            </div>
-            <section className="cajaMostrarProductos"></section>
-          </main> */
-}

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.cardProductStock {
+  position: relative;
+  width: 240px;
+  height: 310px;
+  background: #312a6d;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.cardProductStock:hover {
+  box-shadow: 0px 0px 69px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 69px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 69px -9px rgba(0, 0, 0, 0.75);
+}
+.cardProductStock::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(63, 209, 209);
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+.cardProductStock:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+.cardProductStock::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 8em;
+  color: #1f1d41;
+}
+.cardProductStock .imgBx {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+  /* border: 1px solid rgb(196, 42, 188); */
+}
+.imgBx img {
+  max-width: 65%;
+  transition: 0.5s;
+  /* border: 1px solid gold; */
+}
+.cardProductStock:hover .imgBx img {
+  max-width: 50%;
+}
+.contentBx {
+  position: relative;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  /* border: 1px solid saddlebrown; */
+}
+#nombreDeProducto {
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Darker Grotesque", sans-serif;
+  transition: 0.2s;
+  text-align: center;
+  /* border: 1px solid seagreen; */
+}
+.datesDeProducts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.price {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  font-family: "Darker Grotesque", sans-serif;
+  transition: 0.2s;
+}
+.cardProductStock:hover #nombreDeProducto {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.cardProductStock:hover .price {
+  font-size: 20px;
+}
