@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style/App.css";
-import Rutas from "./Components/Routes/Rutas";
-import Header from "./Components/Routes/Header";
+import Rutas from "./Routes/Rutas";
+import Header from "./Components/Header";
 
 const App = () => {
   return (

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=DM+Sans:opsz@9..40&display=swap");
 .HeaderPrincipal {
+  height: 10.5vh;
   background-color: #100f21;
   border-bottom: 4px solid #313246;
 }
@@ -10,22 +11,10 @@
   font-family: "DM Sans", sans-serif;
   font-size: 2rem;
   letter-spacing: 1.5px;
-}
-/* .CajainpuntHeaderSearch {
-  border: 1px solid firebrick;
-  height: 2rem;
-  width: 15rem;
-} */
-.inpuntHeaderSearch {
-  background-color: #32334f;
-  width: 15rem;
-  height: 2rem;
-  border: none;
-  border-radius: 15px;
-  padding-left: 1.2rem;
-  padding-bottom: 0.2rem;
-  text-decoration: none;
-  color: white;
+  width: 15%;
+  text-align: center;
+  margin-left: 3rem;
+  /* border: 1px solid salmon; */
 }
 
 .cajaUsuarioRegistrado {
@@ -35,6 +24,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* margin-left: 20rem; */
 }
 .cajaFotoUsuario {
   width: 3rem;

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Products from "../../Pages/Products";
+import Products from "../Pages/Products";
 
 const Rutas = () => {
   return (

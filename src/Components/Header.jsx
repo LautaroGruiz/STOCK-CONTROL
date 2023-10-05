@@ -1,4 +1,4 @@
-import "../../Style/Header.css";
+import "../Style/Header.css";
 import { Container, Navbar, Offcanvas } from "react-bootstrap";
 const Header = () => {
   return (
@@ -9,22 +9,6 @@ const Header = () => {
             <Navbar.Brand href="#" className="tittleSeccion">
               Stock Flow
             </Navbar.Brand>
-            {/* <Form className="CajainpuntHeaderSearch">
-              <Form.Control
-                type="search"
-                placeholder="Buscar"
-                className="inpuntHeaderSearch"
-                aria-label="Search"
-                fill="currentColor"
-              />
-            </Form> */}
-            <input
-              type="search"
-              name=""
-              id=""
-              className="inpuntHeaderSearch"
-              placeholder="Buscar"
-            />
             <div className="cajaUsuarioRegistrado">
               <div className="cajaFotoUsuario"></div>
               <div className="cajaNombreUsuario">
