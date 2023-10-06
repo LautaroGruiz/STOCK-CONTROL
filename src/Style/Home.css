@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.mainLogin {
+  background: #141414;
+  height: 100vh;
+}
+.cajaLogoLogin {
+  /* border: 1px solid seagreen; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 6rem !important; */
+}
+.cardLogoLogin {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  /* border: 1px solid aqua; */
+  border: 20px;
+}
+.cardLogoLogin:hover {
+  width: 600px;
+  transition-delay: 0.4s;
+}
+.cardLogoLogin .circule {
+  --clr: #9dbb2f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardLogoLogin .circule::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgb(22, 20, 20);
+  border: 8px solid var(--clr);
+  filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+  transition: 0.4s, background 0.4s;
+  transition-delay: 0.4s, 0.4s;
+}
+.cardLogoLogin:hover .circule::before {
+  transition-delay: 0.3s;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--clr);
+}
+.cardLogoLogin .circule .imagenLogo {
+  position: relative;
+  width: 90%;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.cardLogoLogin:hover .circule .imagenLogo {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+.cardLogoLogin .imagenCaja {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0) rotate(315deg);
+  height: 300px;
+  transition: 0.2s ease-in-out;
+}
+.cardLogoLogin:hover .imagenCaja {
+  transition-delay: 0.2s;
+  top: 20%;
+  left: 74%;
+  height: 350px;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+.cardLogoLogin .cajaTextoLogoLogin {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  left: 20%;
+  padding: 20px 15px 10px 30px !important;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+  /* border: 1px solid black; */
+}
+.cardLogoLogin:hover .cajaTextoLogoLogin {
+  transition-delay: 0.55s;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+.cardLogoLogin .cajaTextoLogoLogin .h2StockFlowLogo {
+  color: rgb(22, 20, 20);
+  font-size: 2.5rem;
+  line-height: 1em;
+  margin-bottom: 1rem !important;
+  font-family: "Archivo Narrow", sans-serif;
+}
+.cardLogoLogin .cajaTextoLogoLogin .preguntaEstasBuscando {
+  font-size: 1.2rem !important;
+  color: rgb(22, 20, 20);
+  font-family: "DM Sans", sans-serif;
+}
+.cardLogoLogin .cajaTextoLogoLogin .noBusquesMas {
+  font-size: 1.2rem !important;
+  color: rgb(114, 0, 167);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-family: "DM Sans", sans-serif;
+}
+.linkLogin-Presentacion {
+  /* border: 1px solid white; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.linkLoginHome {
+  /* border: 1px solid saddlebrown; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* padding-right: 3rem !important ; */
+}
+.botonLoginHome {
+  color: #141414;
+  background: #9dbb2f;
+  padding: 5px 8px !important;
+  margin-right: 1.5rem !important;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: "DM Sans", sans-serif;
+}
+.botonLoginHome:hover {
+  color: rgb(38, 43, 37);
+  background: white;
+}
+.somosTuMejorEleccion {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+}
+.cajaLlevaTuNegocio {
+  /* border: 1px solid white; */
+  width: 50%;
+  margin-bottom: 2rem !important;
+}
+.llevaTuNegocio {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 1px;
+}
+.llevaTuNegocio:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #9dbb2f;
+}
