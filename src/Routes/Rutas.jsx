@@ -1,15 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Login from "../Pages/Login";
-import Register from "../Pages/Register";
-// import Products from "../Pages/Products";
-// import Header from "../Components/Header";
+import Home from "../Pages/Home"
+import Login from "../Pages/Login"
+import Register from "../Pages/Register"
+
 
 const Rutas = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Register />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,12 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "../Style/Login.css";
 
-
 const Login = () => {
   return (
     <Container fluid className="mainLogin">
       <Row>
-        <Col lg={6}>
+        <Col lg={12}>
           <div className="cajaFormLogin">
             <div className="cajaFormInput">
               <form action="">

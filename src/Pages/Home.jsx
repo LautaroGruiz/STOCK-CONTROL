@@ -1,9 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import logoLogin from "../Image/LOGIN/logoLogin2.png";
 import imagenCaja from "../Image/LOGIN/imagenCaja.png";
+import { useNavigate } from "react-router-dom";
 import "../Style/Home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <Container fluid className="mainLogin">
       <Row>
@@ -31,8 +33,8 @@ const Home = () => {
         <Col lg={6}>
           <div className="linkLogin-Presentacion">
             <div className="linkLoginHome">
-                <a href="" className="botonLoginHome">Inicia sesión</a>
-                <a href="" className="botonLoginHome">Registrate</a>
+                <a href="" onClick={() => navigate("/login")} className="botonLoginHome">Inicia sesión</a>
+                <a href="" onClick={() => navigate("/register")} className="botonLoginHome">Registrate</a>
             </div>
             <h1 className="somosTuMejorEleccion">¡Somos tu mejor eleccion!</h1>
             <div className="cajaLlevaTuNegocio">
