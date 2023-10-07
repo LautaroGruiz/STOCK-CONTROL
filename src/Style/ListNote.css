@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainListNote {
+  /* background-color: #100f21; */
+  background-color: #141414;
+  height: 89.5vh;
+}
+.cajaCrearNotas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 35rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  background-color: #1c1c20fb;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.75);
+}
+.CreaTuNotaH2 {
+  /* font-family: "DM Sans", sans-serif; */
+  font-family: "Archivo Narrow", sans-serif;
+  color: #9dbb2f;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.cajaInputNota {
+  /* border: 1px solid seagreen; */
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+.tittleTaskName {
+  color: white;
+  margin-bottom: 8px;
+  font-family: "DM Sans", sans-serif;
+}
+.AddTaksInput {
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #141414;
+  border: none;
+  color: white;
+  outline: none;
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  font-family: "DM Sans", sans-serif;
+
+}
+.buttonCreateTask {
+  background-color: #9dbb2f;
+  font-size: 1.2rem;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 40px;
+  font-family: "Archivo Narrow", sans-serif;
+  color: #141414;
+  margin: 1.3rem 0 0 0rem;
+  transition: 0.2s;
+}
+.buttonCreateTask:hover {
+  color: white;
+  background-color: #505e1e;
+}
+.personaTrabajando {
+  /* border: 1px solid springgreen; */
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 85%;
+  height: 15rem;
+}
+
+
+.cajaMostrarNotas {
+  display: flex;
+  width: 90%;
+  height: 35rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  background-color: #1c1c20fb;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+}

@@ -1,24 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .HeaderPrincipal {
   height: 10.5vh;
-  /* background-color: #100f21; */
   background-color: #141414;
-  /* border-bottom: 4px solid #313246; */
   border-bottom: 4px solid #1c1c20fb;
 }
 .tittleSeccion {
-  padding: 0;
+  padding: 0; 
   color: #fff;
-  font-family: "DM Sans", sans-serif;
-  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.9rem;
   letter-spacing: 1.5px;
   width: 15%;
   text-align: center;
   margin-left: 3rem;
-  /* border: 1px solid salmon; */
+  /* border: 1px solid white; */
 }
-
+.tittleSeccion:hover {
+  color: white;
+}
 .cajaUsuarioRegistrado {
   /* border: 1px solid white; */
   width: 12rem;
@@ -60,16 +61,22 @@
 }
 .navbar-toggler-icon {
   background-image: none;
-  background-image: url(../Image/HEADER/botonHamburguesa.png);
+  background-image: url(../Image/HEADER/botonHamburguesa2.png);
 }
 #offcanvasNavbar-expand-false {
-  /* background-color: #1b1c30; */
   background-color: #1c1c20;
   width: 20rem;
 }
 .offcanvas-header {
   /* border: 1px solid white; */
   height: 10%;
+}
+.menuHeaderLateral {
+  color: #9dbb2f;
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin-left: 4.2rem;
+  cursor: pointer;
 }
 .bodyNavBar {
   /* border: 1px solid saddlebrown; */

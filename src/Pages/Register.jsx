@@ -9,7 +9,7 @@ const Register = () => {
           <div className="cajaFromRegister">
             <div className="cajaFormInputRegister">
               <div className="titulosFromRegister">
-                <h1 className="h1Registrate">Registrate</h1>
+                <h1 className="h1Registrate">Formulario de registro</h1>
                 <h3 className="h3ControlTotal">
                   Mejora tu eficiencia en el manejo de stock
                 </h3>
@@ -59,11 +59,12 @@ const Register = () => {
                 <input
                   type="password"
                   name=""
-                  id="inputEmailRegister"
+                  id="inputContraseñaRegister"
                   required="required"
                 />
-                <span className="spanEmailRegister">Contraseña</span>
+                <span className="spanContraseñaRegister">Contraseña</span>
               </div>
+              <button className="butonRegistrarseRegister" type="submit">Registrarse</button>
             </div>
           </div>
         </Col>

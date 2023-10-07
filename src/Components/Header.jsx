@@ -23,8 +23,8 @@ const Header = () => {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Stock Flow
+                <Offcanvas.Title className="menuHeaderLateral" id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Menú de navegacion
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <section className="bodyNavBar">
