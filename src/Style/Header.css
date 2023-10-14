@@ -7,14 +7,17 @@
   border-bottom: 4px solid #1c1c20fb;
 }
 .tittleSeccion {
-  padding: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.9rem;
   letter-spacing: 1.5px;
   width: 15%;
-  text-align: center;
-  margin-left: 3rem;
+  margin-left: 3rem !important;
+  gap: 10px;
   /* border: 1px solid white; */
 }
 .tittleSeccion:hover {
@@ -22,7 +25,7 @@
 }
 .cajaUsuarioRegistrado {
   /* border: 1px solid white; */
-  width: 12rem;
+  width: 15rem;
   height: 3rem;
   display: flex;
   justify-content: space-around;
@@ -42,7 +45,7 @@
 }
 .nombreUsuario {
   color: white;
-  margin: 0;
+  margin: 0 !important;
   font-family: "DM Sans", sans-serif;
 }
 .tipoDeCargo {
@@ -58,6 +61,8 @@
 }
 .navbar-toggler {
   border: 1px solid #313246;
+  margin-right: 0.5rem !important;
+  padding: 2.5px 8px !important;
 }
 .navbar-toggler-icon {
   background-image: none;
@@ -75,7 +80,7 @@
   color: #9dbb2f;
   font-size: 1.5rem;
   font-family: "Bebas Neue", sans-serif;
-  margin-left: 4.2rem;
+  margin-left: 4.2rem !important;
   cursor: pointer;
 }
 .bodyNavBar {
@@ -89,8 +94,8 @@
   border: 1px solid red;
 } */
 .linkDeSeccion {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +103,7 @@
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
-  padding: 20px;
+  padding: 20px !important;
   transition: 0.2s;
   /* border: 1px solid springgreen; */
 }
@@ -106,10 +111,10 @@
   color: #9dbb2f;
 }
 .tittleSeccionNavBar {
-  margin: 0;
-  margin-left: 0.5rem;
+  margin: 0 !important;
+  margin-left: 0.5rem !important;
 }
 .cajaBotonCerrarSesion {
   /* border: 1px solid salmon; */
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }

@@ -4,29 +4,27 @@
   box-sizing: border-box;
 }
 .mainProducts {
-  /* background-color: #100f21; */
   background-color: #141414;
   height: 89.5vh;
   display: flex;
   flex-direction: column;
 }
+
 .cajaDeFiltro {
   position: relative;
   width: 250px;
   height: 2.5rem;
-  margin-top: 1rem;
-  margin-left: 4.7rem;
+  margin-top: 1rem !important;
+  margin-left: 4.3rem !important;
   font-family: "DM Sans", sans-serif;
   /* border: 1px solid red; */
 }
 #inputSearchProduct {
   width: 100%;
   height: 100%;
-  padding: 7px 10px 0px 13.5px;
-  /* background: #100f21; */
+  padding: 7px 10px 0px 13.5px !important;
   background: #141414;
-  border: 1px solid #1c1c20fb;
-  /* border: 1px solid rgba(128, 128, 128, 0.212); */
+  border: 1px solid #2e2e35fb;
   border-radius: 5px;
   outline: none;
   color: white;
@@ -35,7 +33,7 @@
 .spanInputSearch {
   position: absolute;
   left: 0;
-  padding: 7px 10px 10px 10px;
+  padding: 7px 10px 10px 10px !important;
   pointer-events: none;
   font-size: 1rem;
   color: gray;
@@ -46,36 +44,82 @@
 #inputSearchProduct:focus ~ .spanInputSearch {
   color: #9dbb2f;
   transform: translateX(15px) translateY(-7px);
-  padding: 0 20px;
+  padding: 0 20px !important;
   font-size: 14px;
   background: #141414;
-  border-left: 1px solid #1c1c20fb;
-  border-right: 1px solid #1c1c20fb;
+  border-left: 1px solid #2e2e35fb;
+  border-right: 1px solid #2e2e35fb;
   letter-spacing: 1px;
 }
-
-.cajaMostrarProductos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 89%;
-  height: 32rem;
-  border-radius: 10px;
-  margin-top: 0.5rem;
-  /* background-color: #1b1c30; */
-  background-color: #1c1c20fb;
-  margin: 0 auto;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  gap: 2rem;
-  overflow-y: scroll;
-}
-
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
   background: #9dbb2f;
   border-radius: 3px;
+}  */
+.tablaGeneralProductos {
+  /* border: 1px solid sienna; */
+  width: 90%;
+  margin: 0 auto !important;
+  margin-top: 1rem !important;
+}
+.tablaGeneralProductos thead {
+  background-color: #1c1c20fb;
+}
+.tablaGeneralProductos thead th {
+  color: white;
+  text-align: center;
+  padding: 5px !important;
+  /* font-family: "DM Sans", sans-serif; */
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 1.2px;
+  border: 2.2px solid #c9ff05;
+  font-size: 1.1rem;
+}
+.thAcciones {
+  width: 13rem;
+}
+.tablaGeneralProductos tbody tr {
+  border-left: 1px solid #2e2e35fb;
+  border-right: 1px solid #2e2e35fb;
+  border-bottom: 1px solid #2e2e35fb;
+}
+.tablaGeneralProductos tbody td {
+  border-left: solid #2e2e35fb 1px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  padding: 3px !important;
+  font-size: 1.1rem;
+}
+.botonEditarProductos {
+  border: none;
+  background-color: #484855fb;
+  padding: 3px 7px !important;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: white;
+  transition: .2s;
+}
+.botonEditarProductos:hover {
+  background-color: rgb(41, 128, 209);
+}
+.botonEliminarProductos {
+  border: none;
+  background-color: #484855fb;
+  padding: 3px 7px !important;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: white;
+  margin-left: 10px !important;
+  transition: .2s;
 
+}
+.botonEliminarProductos:hover {
+  background-color: red;
+}
+.tdBotonesAcciones {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
 }

@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "nombre": "Lautaro",
+      "apellido": "Gonzalez Ruiz",
+      "empresa": "No Cap",
+      "telefono": "38144601101",
+      "email": "admin@gmail.com",
+      "contraseña": "123",
+      "id": 1
+    }
+  ]
+}

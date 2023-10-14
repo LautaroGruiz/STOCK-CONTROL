@@ -1,21 +1,58 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { useState, useContext } from "react";
+import { UsuariosContext } from "../Context/UserContext";
+import Swal from "sweetalert2";
 import "../Style/Login.css";
 
 const Login = () => {
+  const [email, setEmail] = useState();
+  const [contraseña, setContraseña] = useState();
+
+  const { users } = useContext(UsuariosContext);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    try {
+      const user = users.find(
+        (user) => user.email === email && user.contraseña === contraseña
+      );
+      if (user) {
+        localStorage.setItem("usuario", JSON.stringify(user));
+        const tagUsuario = JSON.parse(localStorage.getItem("usuario"));
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Bienvenido " + tagUsuario.nombre,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        setTimeout(() => {
+          window.location.href = "/inventario";
+        }, 1000);
+      } else {
+        alert("Usuario no encontrado");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <Container fluid className="mainLogin">
       <Row>
         <Col lg={12}>
           <div className="cajaFormLogin">
             <div className="cajaFormInput">
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <h1 className="loginStockFlowH1">Inicia sesión</h1>
                 <div className="inputBoxLogin">
                   <input
                     className="inputFromLogin"
-                    type="text"
-                    name=""
-                    id=""
+                    type="email"
+                    name="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Correo de Empresa"
                     required
                   />
@@ -32,8 +69,10 @@ const Login = () => {
                   <input
                     className="inputFromLogin"
                     type="password"
-                    name=""
-                    id=""
+                    value={contraseña}
+                    onChange={(e) => setContraseña(e.target.value)}
+                    name="contraseña"
+                    id="contraseña"
                     placeholder="Contraseña"
                     required
                   />
