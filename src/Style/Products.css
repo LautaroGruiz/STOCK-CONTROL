@@ -9,13 +9,18 @@
   display: flex;
   flex-direction: column;
 }
-
+.divCajaInputBuscarBotonAdd {
+  /* border: 1px solid seagreen; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
 .cajaDeFiltro {
   position: relative;
   width: 250px;
   height: 2.5rem;
-  margin-top: 1rem !important;
-  margin-left: 4.3rem !important;
   font-family: "DM Sans", sans-serif;
   /* border: 1px solid red; */
 }
@@ -51,6 +56,132 @@
   border-right: 1px solid #2e2e35fb;
   letter-spacing: 1px;
 }
+.botonAgregarProducto {
+  background-color: #c9ff05;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  padding: 7px 10px !important;
+  border-radius: 5px;
+  transition: 0.2s;
+  letter-spacing: 0.5px;
+}
+.botonAgregarProducto:hover {
+  background-color: #819b25;
+  color: white;
+}
+#modalAddProducto {
+  margin: 0 auto !important;
+  margin-top: 2rem !important;
+}
+.modalHeaderAddProducto {
+  background-color: #141414;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  display: flex;
+  padding-right: 8px !important;
+  padding-left: 10.5rem !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid #484855fb;
+  letter-spacing: 1px;
+  color: #9dbb2f;
+  text-align: center;
+}
+.modalBodyAddProducto {
+  background-color: #141414;
+  color: white;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modalBodyAddProducto form {
+  /* border: 1px solid red; */
+  width: 90%;
+}
+
+.cajaInputModalNombreProducto {
+  text-align: center;
+  margin-bottom: 1.5rem !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff; /* Cambia el color del texto al color deseado */
+  transition: background-color 5000s ease-in-out 0s; /* Evita el cambio de fondo a blanco durante 5 segundos */
+}
+.inputModalNameProducto {
+  width: 80%;
+  height: 100%;
+  padding: 14px 10px 7px 13.5px !important;
+  background: #141414;
+  border: 1px solid #484855fb;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+.spanModalNameProducto {
+  position: absolute;
+  left: 15% !important;
+  padding: 9px 12px !important;
+  pointer-events: none;
+  font-size: 1rem;
+  color: white;
+  transition: 0.5s;
+}
+.inputModalNameProducto:valid ~ .spanModalNameProducto,
+.inputModalNameProducto:focus ~ .spanModalNameProducto {
+  color: #9dbb2f;
+  transform: translateX(15px) translateY(-7px);
+  padding: 0px 10px !important;
+  font-size: 14px;
+  background: #141414;
+  border-left: 1px solid #484855fb;
+  border-right: 1px solid #484855fb;
+  letter-spacing: 1px;
+}
+.modalFooterAddProducto {
+  display: flex !important;
+  justify-content: center !important;
+  border-radius: 0%;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  gap: 20px;
+}
+.cerrarModalAddProducto {
+  border: none;
+  background-color: #484855fb;
+  padding: 4px 7px !important;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: white;
+  transition: 0.2s;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.8px;
+}
+.cerrarModalAddProducto:hover {
+  color: white;
+  background-color: red;
+}
+.añadirModalAddProducto {
+  border: none;
+  background-color: #484855fb;
+  padding: 4px 7px !important;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: white;
+  transition: 0.2s;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.8px;
+}
+.añadirModalAddProducto:hover {
+  color: #141414;
+  background-color: #c9ff05;
+}
 /* ::-webkit-scrollbar {
   width: 5px;
 }
@@ -58,68 +189,4 @@
   background: #9dbb2f;
   border-radius: 3px;
 }  */
-.tablaGeneralProductos {
-  /* border: 1px solid sienna; */
-  width: 90%;
-  margin: 0 auto !important;
-  margin-top: 1rem !important;
-}
-.tablaGeneralProductos thead {
-  background-color: #1c1c20fb;
-}
-.tablaGeneralProductos thead th {
-  color: white;
-  text-align: center;
-  padding: 5px !important;
-  /* font-family: "DM Sans", sans-serif; */
-  font-family: "Archivo Narrow", sans-serif;
-  letter-spacing: 1.2px;
-  border: 2.2px solid #c9ff05;
-  font-size: 1.1rem;
-}
-.thAcciones {
-  width: 13rem;
-}
-.tablaGeneralProductos tbody tr {
-  border-left: 1px solid #2e2e35fb;
-  border-right: 1px solid #2e2e35fb;
-  border-bottom: 1px solid #2e2e35fb;
-}
-.tablaGeneralProductos tbody td {
-  border-left: solid #2e2e35fb 1px;
-  color: white;
-  font-family: "DM Sans", sans-serif;
-  text-align: center;
-  padding: 3px !important;
-  font-size: 1.1rem;
-}
-.botonEditarProductos {
-  border: none;
-  background-color: #484855fb;
-  padding: 3px 7px !important;
-  border-radius: 2px;
-  font-size: 1rem;
-  color: white;
-  transition: .2s;
-}
-.botonEditarProductos:hover {
-  background-color: rgb(41, 128, 209);
-}
-.botonEliminarProductos {
-  border: none;
-  background-color: #484855fb;
-  padding: 3px 7px !important;
-  border-radius: 2px;
-  font-size: 1rem;
-  color: white;
-  margin-left: 10px !important;
-  transition: .2s;
 
-}
-.botonEliminarProductos:hover {
-  background-color: red;
-}
-.tdBotonesAcciones {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
-}

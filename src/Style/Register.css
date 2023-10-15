@@ -62,13 +62,6 @@
   margin-top: 1.6rem !important;
 }
 /* ------------NAME INPUT------------------------------------------------------------------ */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-text-fill-color: white; /* Cambia el color del texto al color deseado */
-  transition: background-color 5000s ease-in-out 0s; /* Evita el cambio de fondo a blanco durante 5 segundos */
-}
 .inputNameRegister {
   width: 35%;
   height: 100%;

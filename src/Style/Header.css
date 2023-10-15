@@ -75,12 +75,13 @@
 .offcanvas-header {
   /* border: 1px solid white; */
   height: 10%;
+  padding-right: 0.5rem !important;
 }
 .menuHeaderLateral {
   color: #9dbb2f;
   font-size: 1.5rem;
   font-family: "Bebas Neue", sans-serif;
-  margin-left: 4.2rem !important;
+  margin-left: 5.2rem !important;
   cursor: pointer;
 }
 .bodyNavBar {

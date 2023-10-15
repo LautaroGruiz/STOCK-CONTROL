@@ -15,7 +15,6 @@ const ListNote = () => {
                 <label className="tittleTaskName">Nombre de nota</label>
                 <input placeholder="Agregar nota" className="AddTaksInput" />
                 <button className="buttonCreateTask">Crear nota</button>
-                {/* <img src={personaTrabajando} className="personaTrabajando" alt="" /> */}
               </div>
             </div>
           </Col>

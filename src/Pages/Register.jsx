@@ -18,7 +18,7 @@ const Register = () => {
     setDataUser({ ...dataUser, [e.target.name]: e.target.value }); //Actualizo con valor del input
   };
 
-  const handleSumbit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     try {
       const response = axios.post("http://localhost:8080/users", dataUser);
@@ -48,7 +48,7 @@ const Register = () => {
                   Mejora tu eficiencia en el manejo de stock
                 </h3>
               </div>
-              <form onSubmit={handleSumbit} className="formRegister">
+              <form onSubmit={handleSubmit} className="formRegister">
                 <div className="cajaInputNameLastRegister">
                   <input
                     type="text"
