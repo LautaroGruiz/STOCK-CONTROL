@@ -1,0 +1,34 @@
+.formEditarProducto {
+  /* border: 1px solid slateblue; */
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
+.cajaInputModalEditarNombreProducto {
+  margin-bottom: 1.5rem !important;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.spanEditarModal {
+  color: #9dbb2f;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.inputModalEditarNameProducto,
+.inputModalEditarPrecioProducto,
+.inputModalEditarStockProducto {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 10px 13.5px !important;
+  background: #141414;
+  border: 1px solid #484855fb;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}

@@ -2,9 +2,9 @@ import "../Style/Header.css";
 import { useContext } from "react";
 import { Container, Navbar, Offcanvas } from "react-bootstrap";
 import { UsuariosContext } from "../Context/UserContext";
+import logoHeader from "../Image/HEADER/logoHeader.png";
 
 const Header = () => {
-
   const usuarioLogueado = JSON.parse(localStorage.getItem("usuario"));
 
   const { logOut } = useContext(UsuariosContext);
@@ -14,12 +14,14 @@ const Header = () => {
         <Navbar key={expand} expand={expand} className="HeaderPrincipal">
           <Container fluid>
             <Navbar.Brand href="#" className="tittleSeccion">
-             {usuarioLogueado.empresa} <h6>ft Stock Flow</h6> 
+              {usuarioLogueado.empresa} <h6>ft Stock Flow</h6>
             </Navbar.Brand>
             <div className="cajaUsuarioRegistrado">
-              <div className="cajaFotoUsuario"></div>
+              <img src={logoHeader} className="cajaFotoUsuario" />
               <div className="cajaNombreUsuario">
-                <p className="nombreUsuario">{usuarioLogueado.nombre} {usuarioLogueado.apellido}</p>
+                <p className="nombreUsuario">
+                  {usuarioLogueado.nombre} {usuarioLogueado.apellido}
+                </p>
                 <p className="tipoDeCargo">{usuarioLogueado.empresa}</p>
               </div>
             </div>

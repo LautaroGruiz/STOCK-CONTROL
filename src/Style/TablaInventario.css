@@ -1,65 +1,79 @@
 .tablaGeneralProductos {
-    /* border: 1px solid sienna; */
-    width: 90%;
-    margin: 0 auto !important;
-    margin-top: 1rem !important;
-  }
-  .tablaGeneralProductos thead {
-    background-color: #1c1c20fb;
-  }
-  .tablaGeneralProductos thead th {
-    color: white;
-    text-align: center;
-    padding: 5px !important;
-    /* font-family: "DM Sans", sans-serif; */
-    font-family: "Archivo Narrow", sans-serif;
-    letter-spacing: 1.2px;
-    border: 2.2px solid #9dbb2f;
-    font-size: 1.1rem;
-  }
-  .thAcciones {
-    width: 13rem;
-  }
-  .tablaGeneralProductos tbody tr {
-    border-left: 1px solid #2e2e35fb;
-    border-right: 1px solid #2e2e35fb;
-    border-bottom: 1px solid #2e2e35fb;
-  }
-  .tablaGeneralProductos tbody td {
-    border-left: solid #2e2e35fb 1px;
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    text-align: center;
-    padding: 3px !important;
-    font-size: 1.1rem;
-  }
-  .botonEditarProductos {
-    border: none;
-    background-color: #484855fb;
-    padding: 3px 7px !important;
-    border-radius: 2px;
-    font-size: 1rem;
-    color: white;
-    transition: 0.2s;
-  }
-  .botonEditarProductos:hover {
-    background-color: rgb(41, 128, 209);
-  }
-  .botonEliminarProductos {
-    border: none;
-    background-color: #484855fb;
-    padding: 3px 7px !important;
-    border-radius: 2px;
-    font-size: 1rem;
-    color: white;
-    margin-left: 10px !important;
-    transition: 0.2s;
-  }
-  .botonEliminarProductos:hover {
-    background-color: red;
-  }
-  .tdBotonesAcciones {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-  
+  /* border: 1px solid sienna; */
+  width: 90%;
+  margin: 0 auto !important;
+  margin-top: 1rem !important;
+}
+.tablaGeneralProductos thead {
+  background-color: #1c1c20fb;
+}
+.tablaGeneralProductos thead th {
+  color: white;
+  text-align: center;
+  padding: 5px !important;
+  /* font-family: "DM Sans", sans-serif; */
+  font-family: "Archivo Narrow", sans-serif;
+  letter-spacing: 1.2px;
+  border: 2.2px solid #9dbb2f;
+  font-size: 1.1rem;
+}
+.thAcciones {
+  width: 13rem;
+}
+.tablaGeneralProductos tbody tr {
+  border-left: 1px solid #2e2e35fb;
+  border-right: 1px solid #2e2e35fb;
+  border-bottom: 1px solid #2e2e35fb;
+}
+.tablaGeneralProductos tbody td {
+  border-left: solid #2e2e35fb 1px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  padding: 3px !important;
+  font-size: 1.1rem;
+}
+.botonEditarProductos {
+  border: none;
+  background-color: #484855fb;
+  padding: 3px 7px !important;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: white;
+  transition: 0.2s;
+}
+.botonEditarProductos:hover {
+  background-color: rgb(41, 128, 209);
+}
+.botonEliminarProductos {
+  border: none;
+  background-color: #484855fb;
+  padding: 3px 7px !important;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: white;
+  margin-left: 10px !important;
+  transition: 0.2s;
+}
+.botonEliminarProductos:hover {
+  background-color: red;
+}
+.tdBotonesAcciones {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+#modalEditProducto {
+  margin: 0 auto !important;
+  margin-top: 2rem !important;
+}
+.noHayProductosDisponibles {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 1px;
+  text-align: center !important;
+  margin-top: 6rem !important;
+}
+.noHayProductosDisponibles:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #9dbb2f;
+}

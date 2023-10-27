@@ -1,13 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style/App.css";
 import UserContext from "./Context/UserContext";
+import ProductContext from "./Context/ProductContext";
 import Rutas from "./Routes/Rutas";
 
 const App = () => {
   return (
     <>
       <UserContext>
-        <Rutas />
+        <ProductContext>
+          <Rutas />
+        </ProductContext>
       </UserContext>
     </>
   );

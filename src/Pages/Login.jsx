@@ -5,10 +5,11 @@ import Swal from "sweetalert2";
 import "../Style/Login.css";
 
 const Login = () => {
-  const [email, setEmail] = useState();
-  const [contraseña, setContraseña] = useState();
-
+  const [email, setEmail] = useState("");
+  const [contraseña, setContraseña] = useState("");
   const { users } = useContext(UsuariosContext);
+
+  // Agregar un nuevo estado para gestionar el usuario autenticado
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,6 +27,7 @@ const Login = () => {
           showConfirmButton: false,
           timer: 1500,
         });
+
         setTimeout(() => {
           window.location.href = "/inventario";
         }, 1000);

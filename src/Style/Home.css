@@ -5,16 +5,17 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .mainLogin {
   background: #141414;
   height: 100vh;
 }
 .cajaLogoLogin {
   /* border: 1px solid seagreen; */
-  height: 100vh;
+  height: 85%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
   /* padding-left: 6rem !important; */
 }
 .cardLogoLogin {

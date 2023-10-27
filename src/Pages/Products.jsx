@@ -1,13 +1,16 @@
 import "../Style/Products.css";
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import Header from "../Components/Header";
+import { ProductosContext } from "../Context/ProductContext";
 import TablaInventario from "../Components/tablaInventario";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const Products = () => {
-  const [show, setShow] = useState(false);
+  const { getProductos } = useContext(ProductosContext); // Obtén la lista de productos y las funciones del contexto de productos
 
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -28,19 +31,38 @@ const Products = () => {
         "http://localhost:8080/products",
         product
       );
-      console.log(response);
       if (response.status === 201) {
         setProduct({
           nombreProducto: "",
           precio: "",
           stock: "",
         });
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Producto Editado",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+
+        // Aquí, recargamos la lista de productos después de agregar uno nuevo.
+        getProductos();
+      } else {
+        console.error(
+          "Error al agregar producto. Respuesta del servidor:",
+          response.status
+        );
+        // Manejar el error, mostrar un mensaje al usuario, etc.
       }
     } catch (error) {
       console.error("Error al agregar producto:", error);
-      // Puedes mostrar un mensaje de error al usuario aquí.
+      // Manejar el error, mostrar un mensaje al usuario, etc.
     }
   };
+  useEffect(() => {
+    // Carga la lista de productos al montar el componente
+    getProductos();
+  }, []);
 
   return (
     <>

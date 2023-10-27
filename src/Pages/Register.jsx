@@ -4,7 +4,6 @@ import axios from "axios";
 import "../Style/Register.css";
 
 const Register = () => {
- 
   const [dataUser, setDataUser] = useState({
     nombre: "",
     apellido: "",
@@ -12,6 +11,7 @@ const Register = () => {
     telefono: "",
     email: "",
     contraseña: "",
+    productos: [],
   });
 
   const handleChange = (e) => {
@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = axios.post("http://localhost:8080/users", dataUser);
-      console.log(response);
+      console.log(response.dataUser);
       setDataUser({
         nombre: "",
         apellido: "",
@@ -30,6 +30,7 @@ const Register = () => {
         telefono: "",
         email: "",
         contraseña: "",
+        productos: [],
       });
     } catch (error) {
       console.log(error);
