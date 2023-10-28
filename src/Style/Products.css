@@ -206,4 +206,14 @@ input:-webkit-autofill:active {
     font-size: 1rem;
     margin-top: 2rem !important;
   }
+  .modalHeaderAddProducto {
+    /* border: 1px saddlebrown solid; */
+    padding-left: 8rem !important;
+  }
+  .inputModalNameProducto {
+    width: 100%;
+  }
+  .spanModalNameProducto {
+    left: 5% !important;
+  }
 }

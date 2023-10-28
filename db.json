@@ -11,5 +11,12 @@
       "id": 1
     }
   ],
-  "products": []
+  "products": [
+    {
+      "nombreProducto": "Medias Nike x3",
+      "precio": "5.000",
+      "stock": "30",
+      "id": 1
+    }
+  ]
 }
