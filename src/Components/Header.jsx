@@ -13,16 +13,18 @@ const Header = () => {
       {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className="HeaderPrincipal">
           <Container fluid>
-            <Navbar.Brand href="#" className="tittleSeccion">
-              {usuarioLogueado.empresa} <h6>ft Stock Flow</h6>
-            </Navbar.Brand>
-            <div className="cajaUsuarioRegistrado">
-              <img src={logoHeader} className="cajaFotoUsuario" />
-              <div className="cajaNombreUsuario">
-                <p className="nombreUsuario">
-                  {usuarioLogueado.nombre} {usuarioLogueado.apellido}
-                </p>
-                <p className="tipoDeCargo">{usuarioLogueado.empresa}</p>
+            <div className="divCajaNombreEmpresaNombreUsuario">
+              <Navbar.Brand href="#" className="tittleSeccion">
+                {usuarioLogueado.empresa} <h6>ft Stock Flow</h6>
+              </Navbar.Brand>
+              <div className="cajaUsuarioRegistrado">
+                <img src={logoHeader} className="cajaFotoUsuario" />
+                <div className="cajaNombreUsuario">
+                  <p className="nombreUsuario">
+                    {usuarioLogueado.nombre} {usuarioLogueado.apellido}
+                  </p>
+                  <p className="tipoDeCargo">{usuarioLogueado.empresa}</p>
+                </div>
               </div>
             </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />

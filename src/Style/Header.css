@@ -118,3 +118,44 @@
   /* border: 1px solid salmon; */
   margin-bottom: 1rem !important;
 }
+.divCajaNombreEmpresaNombreUsuario {
+  /* border: 1px solid saddlebrown; */
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 360px) and (max-width: 914px) {
+  .divCajaNombreEmpresaNombreUsuario {
+    /* border: 1px solid saddlebrown; */
+    width: 83%;
+  }
+  .tittleSeccion {
+    /* border: 1px solid springgreen; */
+    width: 30%;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 2rem;
+  }
+  .tittleSeccion h6 {
+    display: none;
+  }
+  .cajaUsuarioRegistrado {
+    /* border: 1px solid white; */
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .cajaFotoUsuario {
+    width: 2.5rem;
+    height: 2.5rem;
+    /* border: 1px solid springgreen; */
+  }
+  .nombreUsuario {
+    font-size: 14px;
+    /* border: 1px solid springgreen; */
+  }
+  .tipoDeCargo {
+    /* border: 1px solid red; */
+    font-size: 14px;
+
+  }
+}
