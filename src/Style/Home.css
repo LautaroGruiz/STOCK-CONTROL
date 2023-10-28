@@ -27,7 +27,6 @@
   align-items: center;
   transition: 0.5s;
   /* border: 1px solid aqua; */
-  border: 20px;
 }
 .cardLogoLogin:hover {
   width: 600px;
@@ -141,7 +140,6 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 0.4rem !important;
-
   /* padding-right: 3rem !important ; */
 }
 .botonLoginHome {
@@ -178,4 +176,167 @@
 .llevaTuNegocio:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px #9dbb2f;
+}
+.cajaLogoLoginMobile {
+  display: none;
+}
+/* Iphone 12 Pro Max */
+@media (min-width: 360px) and (max-width: 914px) {
+  .mainLogin {
+    display: flex !important;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .linkLogin-Presentacion {
+    /* border: 1px solid saddlebrown; */
+    height: 50vh;
+    margin-bottom: 6rem !important;
+  }
+  .linkLoginHome {
+    /* border: 1px solid seashell; */
+    justify-content: space-evenly;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .botonLoginHome {
+    margin: 0 !important;
+  }
+  .somosTuMejorEleccion {
+    /* border: 1px solid rgb(211, 11, 38); */
+    font-size: 2.5rem;
+    width: 90%;
+    text-align: center;
+    padding: 0 !important;
+  }
+  .cajaLlevaTuNegocio {
+    /* border: 1px solid rgb(4, 70, 253); */
+    width: 40%;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .llevaTuNegocio {
+    font-size: 3rem;
+  }
+  .cajaLogoLogin {
+    display: none;
+  }
+  .cajaLogoLoginMobile {
+    /* border: 1px solid seagreen; */
+    display: flex;
+    justify-content: center;
+    /* padding-left: 6rem !important; */
+  }
+  .cardLogoLoginMobile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    /* border: 1px solid aqua; */
+  }
+  .cardLogoLoginMobile:hover {
+    width: 90%;
+    transition-delay: 0.4s;
+  }
+  .cardLogoLoginMobile .circuleMobile {
+    --clr: #9dbb2f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardLogoLoginMobile .circuleMobile::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgb(22, 20, 20);
+    border: 8px solid var(--clr);
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+    transition: 0.4s, background 0.4s;
+    transition-delay: 0.4s, 0.4s;
+  }
+  .cardLogoLoginMobile:hover .circuleMobile::before {
+    transition-delay: 0.3s;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--clr);
+  }
+  .cardLogoLoginMobile .circuleMobile .imagenLogoMobile {
+    position: relative;
+    width: 90%;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .cardLogoLoginMobile:hover .circuleMobile .imagenLogoMobile {
+    transform: scale(0);
+    transition-delay: 0s;
+  }
+  .cardLogoLoginMobile .imagenCajaMobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.2s ease-in-out;
+  }
+  .cardLogoLoginMobile:hover .imagenCajaMobile {
+    transition-delay: 0.2s;
+    top: 20%;
+    left: 80%;
+    height: 185px;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  .cardLogoLoginMobile .cajaTextoLogoLoginMobile {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    left: 20%;
+    padding: 10px 7.5px 5px 15px !important;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    /* border: 1px solid black; */
+  }
+  .cardLogoLoginMobile:hover .cajaTextoLogoLoginMobile {
+    transition-delay: 0.55s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    width: 60%;
+    /* background-color: blue; */
+  }
+  .cardLogoLoginMobile .cajaTextoLogoLoginMobile .h2StockFlowLogoMobile {
+    color: rgb(22, 20, 20);
+    font-size: 22px;
+    line-height: 1em;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    font-family: "Archivo Narrow", sans-serif;
+  }
+  .cardLogoLoginMobile .cajaTextoLogoLoginMobile .preguntaEstasBuscandoMobile {
+    font-size: 12.2px !important;
+    color: rgb(22, 20, 20);
+    font-family: "DM Sans", sans-serif;
+  }
+  .cardLogoLoginMobile .cajaTextoLogoLoginMobile .noBusquesMasMobile {
+    font-size: 12.2px !important;
+    color: rgb(114, 0, 167);
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-family: "DM Sans", sans-serif;
+  }
 }

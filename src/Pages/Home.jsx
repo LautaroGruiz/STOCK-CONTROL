@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Container fluid className="mainLogin">
       <Row>
-        <Col lg={6}>
+        <Col xs={12} lg={6}>
           <div className="cajaLogoLogin">
             <div className="cardLogoLogin">
               <div className="circule">
@@ -30,7 +30,7 @@ const Home = () => {
             </div>
           </div>
         </Col>
-        <Col lg={6}>
+        <Col xs={12} lg={6}>
           <div className="linkLogin-Presentacion">
             <div className="linkLoginHome">
                 <a href="" onClick={() => navigate("/login")} className="botonLoginHome">Inicia sesión</a>
@@ -41,6 +41,25 @@ const Home = () => {
               <h3 className="llevaTuNegocio">
                 Lleva tu negocio al siguiente nivel
               </h3>
+            </div>
+          </div>
+          <div className="cajaLogoLoginMobile">
+            <div className="cardLogoLoginMobile">
+              <div className="circuleMobile">
+                <img src={logoLogin} className="imagenLogoMobile" />
+              </div>
+              <div className="cajaTextoLogoLoginMobile">
+                <h2 className="h2StockFlowLogoMobile">Stock flow</h2>
+                <p className="preguntaEstasBuscandoMobile">
+                  ¿Estás buscando simplificar la gestión de inventario de tu
+                  negocio y aumentar la eficiencia de tu operación?
+                </p>
+                <p className="noBusquesMasMobile">¡No busques más!</p>
+                <p className="preguntaEstasBuscandoMobile">
+                  Stock Flow es la respuesta que necesitas.
+                </p>
+              </div>
+              <img src={imagenCaja} className="imagenCajaMobile" />
             </div>
           </div>
         </Col>
